@@ -1,0 +1,360 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #112B3C;
+}
+
+nav {
+    width: 100%;
+    height: 72px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 24px;
+    width: 60%;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    border-right: 2px solid burlywood;
+}
+
+nav ul li:last-child {
+    border: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #647d9f;
+}
+
+.logo {
+    display: inline-block;
+    width: 40%;
+    padding-top: 20px;
+}
+
+.logo a {
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #C4DDFF;
+    text-shadow: 1px 1px 2px #001D6E;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('images/birmingham-museums-trust-wKlHsooRVbg-unsplash.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+.banner div {
+    height: 100px;
+}
+
+.banner div p {
+    color: #C4DDFF;
+}
+
+.first {
+    animation: movelr 4s linear infinite alternate-reverse;
+}
+
+@keyframes movelr {
+    from {
+        margin-left: -7%;
+        color:#C4DDFF;
+    }
+    50% {
+        color: #001D6E;
+    }
+    to {
+        margin-left: 100%;
+        color: #C4DDFF;
+    }
+}
+
+.second {
+    text-align: center;
+    font-size: 64px;
+    animation: appear 3s linear infinite;
+}
+
+@keyframes appear {
+    from {
+        height: 0%;
+        overflow: hidden;
+    }
+    to {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+.third {
+
+    font-size: 14px;
+    text-align: center;
+    animation: flyup 3s linear infinite;
+}
+
+@keyframes flyup {
+    from {
+        color: white;
+        font-size: 14px;
+        transform: translateY(75px);
+    }
+    to {
+        color: white;
+        font-size: 28px;
+        transform: translateY(10px)
+    }
+}
+
+.journey {
+    height: 300px;
+    background-color:antiquewhite;
+}
+
+.title {
+    text-align: center;
+    color: #001D6E;
+    letter-spacing: 2px;
+    padding: 5px 0;
+}
+
+.slideshow {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    background-size: cover;
+    animation: slideshow 20s linear infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url('images/2019.jpg');
+    }
+    25% {
+        background-image: url('images/timon-klauser-3MAmj1ZKSZA-unsplash.jpg');
+    }
+    50% {
+        background-image: url('images/khara-woods-KR84RpMCb0w-unsplash.jpg');
+    }
+    75% {
+        background-image: url('images/anna-kolosyuk-D5nh6mCW52c-unsplash.jpg');
+    }
+    100% {
+        background-image: url('images/russn_fckr-krV5aS4jDjA-unsplash.jpg');
+    }
+}
+
+.our_courses {
+    background-color: #8f775a;
+}
+
+.our_courses .course {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+
+    border: 2px solid antiquewhite;
+    border-radius: 15px;
+}
+
+.our_courses .course img {
+    width: 30%;
+    height: 246px;
+    float: left;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+}
+
+.our_courses .course h3 {
+    padding: 5px 0;
+    color: #2c4362;
+}
+
+.our_courses .course h4 {
+    padding: 5px 0;
+    color: #C4DDFF;
+}
+
+.our_courses .course p {
+    padding: 5px 0;
+    color: antiquewhite;
+}
+
+.level {
+    color: rgb(197, 175, 121);
+}
+
+.our_prices {
+    background-color: #647d9f;
+    height: 200px;
+}
+
+.our_prices table {
+    width: 90%;
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+
+.our_prices table thead {
+    background-color: #001D6E;
+    height: 40px;
+    color: antiquewhite;
+}
+
+.our_prices table tbody tr {
+    background-color: white; 
+}
+
+.our_prices table tbody tr:hover {
+    background-color: #C4DDFF;
+}
+
+.our_teachers {
+    background-color: antiquewhite;
+    text-align: center;
+
+    padding-bottom: 55px;
+}
+
+.our_teachers .teacher {
+    width: 40%;
+    height: 250px;
+    background-color: #647d9f;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5px;
+    transition: all 500ms linear;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.our_teachers .teacher:hover {
+    transform: scale(1.05);
+}
+
+.our_teachers .teacher img{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 2px solid#001D6E;
+}
+
+.faq {
+    background-color: #C4DDFF;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.faq a {
+    text-decoration: none;
+    color: #001D6E;
+}
+
+.faq article {
+    color: antiquewhite;
+    background-color: #001D6E;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s linear;
+}
+
+
+.faq article:target {
+    height: 100px;
+    overflow: hidden;
+}
+
+.number {
+    color: antiquewhite;
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    padding: 5px;
+    background-color: #001D6E;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: white solid 2px;
+}
+
+#contact {
+    background-color: antiquewhite;
+}
+
+.form-wrapper {
+    width: 90%;
+    background-color: aliceblue;
+    margin:0 auto;
+}
+
+.row {
+    height: 50px;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+label {
+    display: inline-block;
+    width: 40%;
+}
+
+input, select{
+    display: inline-block;
+    width: 55%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border:#001D6E solid 2px;
+    height: 32px;
+    padding-left: 10px;
+}
+ 
+input[type="submit"] {
+    width: 100%;
+    background-color: #001D6E;
+    color: antiquewhite;
+}
+
+input:focus {
+    background-color: #647d9f;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+    color: #001D6E;
+}
+
+footer h2 {
+    padding-top: 15px;
+}
+
+footer img {
+    width: 100;
+    height: 100px;
+}
+
